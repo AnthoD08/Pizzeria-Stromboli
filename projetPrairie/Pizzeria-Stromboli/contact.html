@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="contact">
+
+<nav class="navbar">
+    <a href="#">
+       
+    </a>
+
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li> 
+      <li><a href="gestionBDD/coAdmin.html">Connexion</a></li>
+    </ul>
+
+</nav>
+<section id="bienvenue">
+  <!-- EN-TETE -->
+  <div class="conteneur">
+      <header>
+         Pizzeria Stromboli
+          <span id="slogan">Pizza au feu de bois.</span>
+      </header>
+  </div>
+</section>
+
+<div class="container">
+  <h1>Formulaire de contact</h1>
+  <form action="traitement.php" method= "post">
+    <label for="fname">Nom & prénom</label>
+    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+    <label for="sujet">Sujet</label>
+    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+    <label for="emailAddress">Email</label>
+    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+
+    <input type="submit" name= "envoyer" value="Envoyer">
+  </form>
+</div
+
+<footer>
+  <div class="conteneur" id="flexbox-foot">
+      <div id="logo-foot">
+          <img src="images/footer.png" alt="Pizza" style="width: 40px " />
+          2024 © Pizzeria Stromboli
+      </div>
+
+
+
+</body>
+</html>
