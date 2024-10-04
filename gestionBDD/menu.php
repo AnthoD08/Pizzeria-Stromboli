@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<h1> MENU </h1>
 
 
 <?php
@@ -36,7 +37,7 @@
         // Vérification et affichage des résultats
         if ($stmt->rowCount() > 0) {
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo $row['catégorie'] . " : <br>" ;
+                echo "<h4>" . $row['catégorie'] . " : </h4>" ;
             }
         } else {
             echo "0 résultats";
@@ -63,7 +64,7 @@
         // Vérification et affichage des résultats
         if ($boi->rowCount() > 0) {
             while ($row = $boi->fetch(PDO::FETCH_ASSOC)) {
-                echo $row['catégorie'] . " : <br>" ;
+                echo "<h4>" . $row['catégorie'] . " : </h4>" ;
             }
         } else {
             echo "0 résultats";
@@ -89,7 +90,7 @@
         // Vérification et affichage des résultats
         if ($des->rowCount() > 0) {
             while ($row = $des->fetch(PDO::FETCH_ASSOC)) {
-                echo $row['catégorie'] . " : <br>" ;
+                echo "<h4>" . $row['catégorie'] . " : </h4>" ;
             }
         } else {
             echo "0 résultats";
